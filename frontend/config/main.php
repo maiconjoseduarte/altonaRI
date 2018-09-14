@@ -46,4 +46,7 @@ return [
         */
     ],
     'params' => $params,
+
+    // controlador default
+    'defaultRoute' => 'site/index',
 ];

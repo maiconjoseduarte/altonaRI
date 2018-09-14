@@ -72,6 +72,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout = 'novo';
+
         return $this->render('index');
     }
 
