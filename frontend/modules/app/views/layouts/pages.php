@@ -37,14 +37,14 @@ SiteAsset::register($this);
     <div class="container-fluid">
 
         <div id="logo" class="pull-left">
-            <h1><a href="#intro" class="scrollto">Altona</a></h1>
+            <h1><a href="index.php?r=site%2Findex" class="scrollto">Altona</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
-<!--        <a href="#intro"><img src="site/imgaltona/logomenu.png" alt="" title="" /></a>-->
+            <!--             <a href="#intro"><img src="site/imgaltona/logomenu.png" alt="" title="" /></a>-->
         </div>
-            <nav id="nav-menu-container">
+
+        <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li class="menu-active"><a href="#intro">Home</a></li>
-                <li><a href="index.php?r=app%2Fdefault%2Fcreate">Teste</a></li>
+                <li class="menu-active"><a href="index.php?r=site%2Findex">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -63,11 +63,11 @@ SiteAsset::register($this);
     </div>
 </header><!-- #header -->
 
-    <?= Breadcrumbs::widget([
-        'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-    ]) ?>
-    <?= Alert::widget() ?>
-    <?= $content ?>
+<?= Breadcrumbs::widget([
+    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+]) ?>
+<?= Alert::widget() ?>
+<?= $content ?>
 
 <?php $this->endBody() ?>
 </body>
